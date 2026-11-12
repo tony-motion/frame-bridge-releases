@@ -1,0 +1,25 @@
+{
+  "version": "0.1.0",
+  "build": "20261111.2031-0aafdee",
+  "shellVersion": "1.0.0",
+  "notes": [
+    "First test build: the Figma plugin and the After Effects Receiver connect directly, with one-time approval.",
+    "Select frames to send just those, or select nothing to send every frame on the page.",
+    "Each frame becomes an AE composition with the right size, frame rate, duration and name, with Scale 1×–4× to enlarge comps.",
+    "Every top-level element arrives as its own Figma-rendered image, placed exactly where Figma draws it, with an optional Figma Reference layer on top.",
+    "Plain colour frame backgrounds arrive as editable solids.",
+    "Progress, Cancel, Resume after a disconnect, a results summary, and a saved report."
+  ],
+  "testFocus": [
+    "First-time approval, then automatic reconnection after quitting and reopening After Effects.",
+    "Send 2–3 frames, then a batch of 20+; compare each comp against its Figma Reference layer.",
+    "Cancel halfway through a batch; quit After Effects during a send, then Resume.",
+    "Send the same frames twice: you should get new comps named “… 2”, never mixed-up ones."
+  ],
+  "package": {
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.1.0/frame-bridge-0.1.0.zip",
+    "sha256": "9860acf8b6099ec00c78eeb2acc089901dd6bd6006939650222c584902aa1c0b",
+    "size": 72873
+  },
+  "signature": "AQL45zD2u61XyBN7o0AqDMdOn3ezlTMs4iG+FNo4nTdtdalxGVQguYsYGgzkS1x8JRf7CUYXt3KfGJpnUbevCw=="
+}
