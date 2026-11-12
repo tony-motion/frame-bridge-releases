@@ -1,25 +1,23 @@
 {
-  "version": "0.1.0",
-  "build": "20261111.2031-0aafdee",
+  "version": "0.1.1",
+  "build": "20261112.1220-12a21e6",
   "shellVersion": "1.0.0",
   "notes": [
-    "First test build: the Figma plugin and the After Effects Receiver connect directly, with one-time approval.",
-    "Select frames to send just those, or select nothing to send every frame on the page.",
-    "Each frame becomes an AE composition with the right size, frame rate, duration and name, with Scale 1×–4× to enlarge comps.",
-    "Every top-level element arrives as its own Figma-rendered image, placed exactly where Figma draws it, with an optional Figma Reference layer on top.",
-    "Plain colour frame backgrounds arrive as editable solids.",
-    "Progress, Cancel, Resume after a disconnect, a results summary, and a saved report."
+    "New defaults: 23.976 fps and 30 seconds. If you never changed the old defaults (30 fps, 10 seconds), they switch over automatically.",
+    "The Frame rate menu now works and lists the same rates as After Effects' Composition Settings: 8, 12, 15, 23.976, 24, 25, 29.97, 30, 50, 59.94, 60 and 120. You can still type any rate.",
+    "23.976, 29.97 and 59.94 now create comps at AE's exact NTSC rates, matching AE's own presets.",
+    "New setting: Open all comps after import (on by default). Turn it off to open only the first comp.",
+    "The Figma panel is a little taller so all settings fit without scrolling."
   ],
   "testFocus": [
-    "First-time approval, then automatic reconnection after quitting and reopening After Effects.",
-    "Send 2–3 frames, then a batch of 20+; compare each comp against its Figma Reference layer.",
-    "Cancel halfway through a batch; quit After Effects during a send, then Resume.",
-    "Send the same frames twice: you should get new comps named “… 2”, never mixed-up ones."
+    "This is the first automatic update: reopening After Effects should show “Updated to 0.1.1”, and re-running the Figma plugin should show BUILD 0.1.1.",
+    "Frame rate menu: click the arrow and pick each rate; check the comp's frame rate in AE's Composition Settings, especially 23.976 and 29.97.",
+    "Open all comps after import: send 3–5 frames with it on (every comp opens as a tab, the first one in front), then off (only the first opens)."
   ],
   "package": {
-    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.1.0/frame-bridge-0.1.0.zip",
-    "sha256": "9860acf8b6099ec00c78eeb2acc089901dd6bd6006939650222c584902aa1c0b",
-    "size": 72873
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.1.1/frame-bridge-0.1.1.zip",
+    "sha256": "b0b13760240b851334f8ee19e31d293f922e16fc24be56a448c17c3e42c1d869",
+    "size": 74884
   },
-  "signature": "AQL45zD2u61XyBN7o0AqDMdOn3ezlTMs4iG+FNo4nTdtdalxGVQguYsYGgzkS1x8JRf7CUYXt3KfGJpnUbevCw=="
+  "signature": "VZhlwOQ3mpEvWzash3+CUoAG438aGWHOkNktsP2fNDLEGuQdsLPvNTx7/YHB8z5oXTAveFsAg63NMx9U9p8SCQ=="
 }
