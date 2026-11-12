@@ -1,23 +1,26 @@
 {
-  "version": "0.1.1",
-  "build": "20261112.1220-12a21e6",
+  "version": "0.2.0",
+  "build": "20261112.1358-4313b44",
   "shellVersion": "1.0.0",
   "notes": [
-    "New defaults: 23.976 fps and 30 seconds. If you never changed the old defaults (30 fps, 10 seconds), they switch over automatically.",
-    "The Frame rate menu now works and lists the same rates as After Effects' Composition Settings: 8, 12, 15, 23.976, 24, 25, 29.97, 30, 50, 59.94, 60 and 120. You can still type any rate.",
-    "23.976, 29.97 and 59.94 now create comps at AE's exact NTSC rates, matching AE's own presets.",
-    "New setting: Open all comps after import (on by default). Turn it off to open only the first comp.",
-    "The Figma panel is a little taller so all settings fit without scrolling."
+    "Milestone 2: shapes now arrive as editable AE shape layers: rectangles, ellipses, lines, polygons, stars, vectors and boolean shapes.",
+    "Fills and strokes are editable: colour, opacity, width, inside/outside alignment, caps, joins and dashes.",
+    "Figma groups and frames become nulls, with their layers parented to them.",
+    "Frames that clip their content become precomps (rounded corners are masked). Partly transparent groups become precomps too.",
+    "Text, shadows, blurs, gradients, image fills and masks still arrive as Figma-rendered images of just that piece. The report says which and why.",
+    "The Figma Reference layer is no longer squashed when a frame has a drop shadow.",
+    "After updating, close Frame Bridge in Figma and run it again. Until you do, it will say Update needed."
   ],
   "testFocus": [
-    "This is the first automatic update: reopening After Effects should show “Updated to 0.1.1”, and re-running the Figma plugin should show BUILD 0.1.1.",
-    "Frame rate menu: click the arrow and pick each rate; check the comp's frame rate in AE's Composition Settings, especially 23.976 and 29.97.",
-    "Open all comps after import: send 3–5 frames with it on (every comp opens as a tab, the first one in front), then off (only the first opens)."
+    "Turn on the Figma Reference layer and check that every shape sits exactly on it, at Scale 1× and 2×.",
+    "Strokes: inside, outside, dashed and thick on curves. Rounded and per-corner rectangles. Pen-tool vectors with holes.",
+    "Groups arrive as nulls you can move; frames with Clip content arrive as precomps that clip like Figma.",
+    "Edit ▸ Undo removes the last frame completely, including its precomps and nulls."
   ],
   "package": {
-    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.1.1/frame-bridge-0.1.1.zip",
-    "sha256": "b0b13760240b851334f8ee19e31d293f922e16fc24be56a448c17c3e42c1d869",
-    "size": 74884
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.0/frame-bridge-0.2.0.zip",
+    "sha256": "c336ab537d5ec7a05aa9fa667bda511c77c146cd5c28376f49b7d6bce72927cf",
+    "size": 85693
   },
-  "signature": "VZhlwOQ3mpEvWzash3+CUoAG438aGWHOkNktsP2fNDLEGuQdsLPvNTx7/YHB8z5oXTAveFsAg63NMx9U9p8SCQ=="
+  "signature": "tPKb/CZ0GdINV3XLuQhudCePpOPeiU+t/jvkQ9joxHH9aBfx/XpukhZyJUfI44gUDtgAQgpS1puiouTqFlpGAw=="
 }
