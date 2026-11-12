@@ -1,26 +1,21 @@
 {
-  "version": "0.2.0",
-  "build": "20261112.1358-4313b44",
+  "version": "0.2.1",
+  "build": "20261112.1544-f9695bc",
   "shellVersion": "1.0.0",
   "notes": [
-    "Milestone 2: shapes now arrive as editable AE shape layers: rectangles, ellipses, lines, polygons, stars, vectors and boolean shapes.",
-    "Fills and strokes are editable: colour, opacity, width, inside/outside alignment, caps, joins and dashes.",
-    "Figma groups and frames become nulls, with their layers parented to them.",
-    "Frames that clip their content become precomps (rounded corners are masked). Partly transparent groups become precomps too.",
-    "Text, shadows, blurs, gradients, image fills and masks still arrive as Figma-rendered images of just that piece. The report says which and why.",
-    "The Figma Reference layer is no longer squashed when a frame has a drop shadow.",
-    "After updating, close Frame Bridge in Figma and run it again. Until you do, it will say Update needed."
+    "Frames with a gradient or image background no longer flatten into one image. The background arrives as a picture of just the background, and everything on top stays editable.",
+    "The same goes for frames inside frames, and for frame strokes with a gradient or a different width on each side.",
+    "A frame still flattens if its background is a video or an image with adjustments (exposure, contrast and so on). The report says so."
   ],
   "testFocus": [
-    "Turn on the Figma Reference layer and check that every shape sits exactly on it, at Scale 1× and 2×.",
-    "Strokes: inside, outside, dashed and thick on curves. Rounded and per-corner rectangles. Pen-tool vectors with holes.",
-    "Groups arrive as nulls you can move; frames with Clip content arrive as precomps that clip like Figma.",
-    "Edit ▸ Undo removes the last frame completely, including its precomps and nulls."
+    "Send the Meta social frames again: the background should be one image layer called Background, with shapes, text and images on top as separate layers.",
+    "Turn on the Figma Reference layer and check the background matches: gradient direction and colours, and image fills cropped and positioned like Figma.",
+    "If you have them, try angular and diamond gradients, and an image fill set to Fit, Crop or Tile, or rotated."
   ],
   "package": {
-    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.0/frame-bridge-0.2.0.zip",
-    "sha256": "c336ab537d5ec7a05aa9fa667bda511c77c146cd5c28376f49b7d6bce72927cf",
-    "size": 85693
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.1/frame-bridge-0.2.1.zip",
+    "sha256": "3af45e8ab18447686a42fa2f7e6ff68368700dcf86b22fc3a86c46175c531ac9",
+    "size": 91163
   },
-  "signature": "tPKb/CZ0GdINV3XLuQhudCePpOPeiU+t/jvkQ9joxHH9aBfx/XpukhZyJUfI44gUDtgAQgpS1puiouTqFlpGAw=="
+  "signature": "ByzAONL+/EwIpUWtfyNrj+cDzwIVd6RwjuAzBnHoW9VE3oywi8L7QZyX24MT8z0SQTcOtXcWmsJnjRUkGKW+Dw=="
 }
