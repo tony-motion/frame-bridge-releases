@@ -1,17 +1,19 @@
 {
-  "version": "0.2.4",
-  "build": "20261113.1209-a7efd11",
+  "version": "0.2.5",
+  "build": "20261113.1217-43fd3b4",
   "shellVersion": "1.0.0",
   "notes": [
-    "Fixed: lines and open pen-tool paths sat slightly off in After Effects, and their round or square caps didn't reach past the ends. Their strokes are now centred like in Figma, so dashes line up too."
+    "Create test frames now adds two more frames: one for clipping, transparency, blend modes, shadows, blurs, masks, gradients and image fills, and one with a full-size image background.",
+    "They use a made-up test pattern image (no client artwork), so position, cropping and rotation are easy to check."
   ],
   "testFocus": [
-    "Send the test frames again and compare Line 0°, 30° and −60°, Round caps, Square caps, Dashed line, Open path and Thick curved stroke against the Figma Reference."
+    "In a new Figma file, click Create test frames and send all five frames.",
+    "Use the table in TESTING-M2.md (Test frames section) to check what each item in the structure frame should turn into."
   ],
   "package": {
-    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.4/frame-bridge-0.2.4.zip",
-    "sha256": "3801a5ab78e49332584fcae3e8ac37f99ab16c4c93e0a102590ec2364881c568",
-    "size": 96504
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.5/frame-bridge-0.2.5.zip",
+    "sha256": "476e3abb71fc050d2254b205bedd3ed3f7fd389864e9210c4bf7dee0ab822d9d",
+    "size": 103698
   },
-  "signature": "Y6Yts/FDIX4FH1vtAODvKjbiOd6+e8hMXh3q7b6pkJT0GpzfnqbpQx1bEGZlavRDDu3Oc6PPtDEJe9H05S+kAg=="
+  "signature": "QSLDg4Cg3/z87j8nyJehmEpcKGsIRxXeypCcCr8JHjsTxvjtRIsJcdEZ1zx3CEen2yFm/Uv4nF2sGnEPr8MpDg=="
 }
