@@ -1,20 +1,17 @@
 {
-  "version": "0.2.3",
-  "build": "20261113.1019-75522e7",
+  "version": "0.2.4",
+  "build": "20261113.1209-a7efd11",
   "shellVersion": "1.0.0",
   "notes": [
-    "Fixed: frames with round or bevel stroke corners failed to build in After Effects (\"property is hidden\"). They now build.",
-    "Fixed: filled pen-tool vectors (shapes with holes, letters, rings) arrived as images. They're now editable shape layers.",
-    "Report wording: plural notes read properly (\"4 layers with…\")."
+    "Fixed: lines and open pen-tool paths sat slightly off in After Effects, and their round or square caps didn't reach past the ends. Their strokes are now centred like in Figma, so dashes line up too."
   ],
   "testFocus": [
-    "Send the three test frames again (Preferences ▸ Create test frames if you need a fresh set) and work through the Accuracy checklist with the Figma Reference layer on.",
-    "Ring, Letter A and Closed curve should be shape layers now, not images."
+    "Send the test frames again and compare Line 0°, 30° and −60°, Round caps, Square caps, Dashed line, Open path and Thick curved stroke against the Figma Reference."
   ],
   "package": {
-    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.3/frame-bridge-0.2.3.zip",
-    "sha256": "1db6db503a8864c93636600ccfa9d1daae38253684289c1853a7ba6bd12b8137",
-    "size": 96457
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.4/frame-bridge-0.2.4.zip",
+    "sha256": "3801a5ab78e49332584fcae3e8ac37f99ab16c4c93e0a102590ec2364881c568",
+    "size": 96504
   },
-  "signature": "Pk6VKS/J+TZ7LmFDRoWeRR/CVkMWmpg80g5/iUfMwTuWQ5QmEkjmEWsKKqBCzCNQuvu3pVD/A1b2PLYIQrLQBA=="
+  "signature": "Y6Yts/FDIX4FH1vtAODvKjbiOd6+e8hMXh3q7b6pkJT0GpzfnqbpQx1bEGZlavRDDu3Oc6PPtDEJe9H05S+kAg=="
 }
