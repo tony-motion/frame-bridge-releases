@@ -1,22 +1,18 @@
 {
-  "version": "0.2.8",
-  "build": "20261113.1357-93dd101",
+  "version": "0.2.9",
+  "build": "20261113.1409-3285d6e",
   "shellVersion": "1.0.0",
   "notes": [
-    "After Cancel, the results now offer Send the remaining frames. It skips the frames already built, so nothing is duplicated.",
-    "If the Figma plugin closes partway through a send (you close it, or Figma quits), the next time you run Frame Bridge in the same file and page it offers to Resume.",
-    "Lines: Frame Bridge now measures where Figma actually draws each line's stroke (some lines are drawn to one side even though Figma says Center) and places the AE line to match.",
-    "Fixed: resuming a send could immediately cancel one frame left over from the cancelled run."
+    "Dashed strokes now space their dashes the way Figma does: the pattern is stretched slightly so it fits the line or shape evenly, with the first dash centred on the start. No more leftover sliver at the end of a dashed line, or seam on a dashed circle.",
+    "The dash lengths in AE are the fitted ones, and the dash Offset centres the first dash."
   ],
   "testFocus": [
-    "Send the test frames and compare Line 0°, 30° and −60°, Round caps, Square caps and Dashed line against the Figma Reference.",
-    "Cancel partway through, then click Send the remaining frames.",
-    "Close the Figma plugin partway through a send, run it again, and click Resume on the Last send didn't finish card."
+    "Send the test frames and compare Dashed line, Dashed circle and Stroke centre/inside/outside against the Figma Reference."
   ],
   "package": {
-    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.8/frame-bridge-0.2.8.zip",
-    "sha256": "1adcc00f7d4b7489ed0b62413a9cb06e41ff77193eba7946a844e53b88cf0fc1",
-    "size": 105342
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.9/frame-bridge-0.2.9.zip",
+    "sha256": "e1308cf56bdb184701ba0e6e54aa1706831079070f6c34617b3e9a3cc7fd04e0",
+    "size": 105994
   },
-  "signature": "0FOEFsFDkdFHvVSH4uN8v92ouEFcNme+y71niqqvINwxOsAqaubP+qG51EglHPm4qUQBesxvZQEPPA+ltTIjBA=="
+  "signature": "KK9ClfKT3Ei5dyp0PD+anMiU7YuLYoGTMqsOqGnDuHshKTlrAJYUWEF+s2i1jLljrRPxBkahXyVlImghDBOKCw=="
 }
