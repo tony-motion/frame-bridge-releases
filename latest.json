@@ -1,19 +1,19 @@
 {
-  "version": "0.2.5",
-  "build": "20261113.1217-43fd3b4",
+  "version": "0.2.6",
+  "build": "20261113.1308-514c733",
   "shellVersion": "1.0.0",
   "notes": [
-    "Create test frames now adds two more frames: one for clipping, transparency, blend modes, shadows, blurs, masks, gradients and image fills, and one with a full-size image background.",
-    "They use a made-up test pattern image (no client artwork), so position, cropping and rotation are easy to check."
+    "Fixed: a frame's gradient stroke set to Inside (or Outside) came over twice as thick and spilled past the frame. It's now trimmed exactly like Figma.",
+    "Lines: Frame Bridge now checks where Figma actually draws each line (some lines are drawn to one side, with the caps kept inside the length) and places the AE line to match."
   ],
   "testFocus": [
-    "In a new Figma file, click Create test frames and send all five frames.",
-    "Use the table in TESTING-M2.md (Test frames section) to check what each item in the structure frame should turn into."
+    "Send the test frames again. Compare Round caps, Square caps, Dashed line and the three angled lines against the Figma Reference.",
+    "In the structure frame, check Frame, gradient stroke now matches Figma."
   ],
   "package": {
-    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.5/frame-bridge-0.2.5.zip",
-    "sha256": "476e3abb71fc050d2254b205bedd3ed3f7fd389864e9210c4bf7dee0ab822d9d",
-    "size": 103698
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.6/frame-bridge-0.2.6.zip",
+    "sha256": "91fe46890b5a6e19dc6aa4a65d4e13af94e0f509eef0cbf029fa6a6b4708cb6f",
+    "size": 104408
   },
-  "signature": "QSLDg4Cg3/z87j8nyJehmEpcKGsIRxXeypCcCr8JHjsTxvjtRIsJcdEZ1zx3CEen2yFm/Uv4nF2sGnEPr8MpDg=="
+  "signature": "lXrRG4t6xCq61k141lW9b87Qm6eBtDZ7/wCBQT7AwnXOVJnS8sc55Fs1CFahjdJbanxQwg8FtQgvGznoYLv3BA=="
 }
