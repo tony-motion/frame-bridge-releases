@@ -1,20 +1,20 @@
 {
-  "version": "0.2.2",
-  "build": "20261113.1000-aa65994",
+  "version": "0.2.3",
+  "build": "20261113.1019-75522e7",
   "shellVersion": "1.0.0",
   "notes": [
-    "Image fills now arrive as the whole original image, larger than the frame or rectangle, so you can move and rescale it in After Effects.",
-    "If the shape fills the whole frame, the image just runs past the comp edges. If it's smaller, a mask called Figma shape trims it like Figma does; slide the image inside with the Pan Behind tool (Y).",
-    "New: Preferences (the gear) ▸ Create test frames adds a page with three test frames full of shapes, strokes, rotations and flips."
+    "Fixed: frames with round or bevel stroke corners failed to build in After Effects (\"property is hidden\"). They now build.",
+    "Fixed: filled pen-tool vectors (shapes with holes, letters, rings) arrived as images. They're now editable shape layers.",
+    "Report wording: plural notes read properly (\"4 layers with…\")."
   ],
   "testFocus": [
-    "Send your Meta social frames again: the photo should be one full-size image layer that extends past the comp, lined up with the Figma Reference.",
-    "In a new Figma file, click Create test frames, send all three frames and work through the Accuracy checklist."
+    "Send the three test frames again (Preferences ▸ Create test frames if you need a fresh set) and work through the Accuracy checklist with the Figma Reference layer on.",
+    "Ring, Letter A and Closed curve should be shape layers now, not images."
   ],
   "package": {
-    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.2/frame-bridge-0.2.2.zip",
-    "sha256": "f689aa60ac43a47ccb88c996e2aa9978f50e8a2ea03bd1fa37a1e5a14e0100de",
-    "size": 96168
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.3/frame-bridge-0.2.3.zip",
+    "sha256": "1db6db503a8864c93636600ccfa9d1daae38253684289c1853a7ba6bd12b8137",
+    "size": 96457
   },
-  "signature": "vHJL9+ttqwjTYkCLCGGAsJ1F5hjq3hwM0GI6nHmrp8K0+1+aQB2toAp2ZUFjU90SF9e/FtB3nZkq11xiK7nuDQ=="
+  "signature": "Pk6VKS/J+TZ7LmFDRoWeRR/CVkMWmpg80g5/iUfMwTuWQ5QmEkjmEWsKKqBCzCNQuvu3pVD/A1b2PLYIQrLQBA=="
 }
