@@ -1,18 +1,22 @@
 {
-  "version": "0.2.7",
-  "build": "20261113.1326-c7a6779",
+  "version": "0.2.8",
+  "build": "20261113.1357-93dd101",
   "shellVersion": "1.0.0",
   "notes": [
-    "Lines: a line set to Inside is now placed the way Figma draws it, entirely on one side of the line with round or square caps kept within its length. This covers the test frames' lines, caps and dashed line."
+    "After Cancel, the results now offer Send the remaining frames. It skips the frames already built, so nothing is duplicated.",
+    "If the Figma plugin closes partway through a send (you close it, or Figma quits), the next time you run Frame Bridge in the same file and page it offers to Resume.",
+    "Lines: Frame Bridge now measures where Figma actually draws each line's stroke (some lines are drawn to one side even though Figma says Center) and places the AE line to match.",
+    "Fixed: resuming a send could immediately cancel one frame left over from the cancelled run."
   ],
   "testFocus": [
-    "Send the test frames again and compare Line 0°, 30° and −60°, Round caps, Square caps and Dashed line against the Figma Reference.",
-    "Resume: start sending all five frames, close the Frame Bridge panel in After Effects partway through, reopen it (Window ▸ Extensions ▸ Frame Bridge), then click Resume in Figma. Only the frames that weren't built yet should arrive."
+    "Send the test frames and compare Line 0°, 30° and −60°, Round caps, Square caps and Dashed line against the Figma Reference.",
+    "Cancel partway through, then click Send the remaining frames.",
+    "Close the Figma plugin partway through a send, run it again, and click Resume on the Last send didn't finish card."
   ],
   "package": {
-    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.7/frame-bridge-0.2.7.zip",
-    "sha256": "30b06a5e591afe00f4f8493d7f3515673c3e02723fd3f6a1d002852706ec207b",
-    "size": 104054
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.8/frame-bridge-0.2.8.zip",
+    "sha256": "1adcc00f7d4b7489ed0b62413a9cb06e41ff77193eba7946a844e53b88cf0fc1",
+    "size": 105342
   },
-  "signature": "GNPH+G0BRivb2O/eFpS7/iNxW5ZElfP/gWk93nxYKx5+TjkBkt3Vw681ZEQF8ZDmZiSAzPWH+jRubkGN7fTzCA=="
+  "signature": "0FOEFsFDkdFHvVSH4uN8v92ouEFcNme+y71niqqvINwxOsAqaubP+qG51EglHPm4qUQBesxvZQEPPA+ltTIjBA=="
 }
