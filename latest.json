@@ -1,18 +1,20 @@
 {
-  "version": "0.2.9",
-  "build": "20261113.1409-3285d6e",
+  "version": "0.2.10",
+  "build": "20261113.1451-00e0f29",
   "shellVersion": "1.0.0",
   "notes": [
-    "Dashed strokes now space their dashes the way Figma does: the pattern is stretched slightly so it fits the line or shape evenly, with the first dash centred on the start. No more leftover sliver at the end of a dashed line, or seam on a dashed circle.",
-    "The dash lengths in AE are the fitted ones, and the dash Offset centres the first dash."
+    "Fixed (important): if the After Effects panel closed partway through a send and you resumed soon after, comps built before the close could lose their images (colour bars, missing files). Resuming now never touches images that existing comps use.",
+    "The After Effects panel now says when an import was cut short, and that you finish it with Resume in Figma.",
+    "Dashed lines now start and end on a half dash like Figma (the dash Offset in AE was going the wrong way)."
   ],
   "testFocus": [
-    "Send the test frames and compare Dashed line, Dashed circle and Stroke centre/inside/outside against the Figma Reference."
+    "Close the Frame Bridge panel in After Effects partway through a send, reopen it, check it says the import didn't finish, then click Resume in Figma. Every comp should keep all its images (File ▸ Dependencies ▸ Find Missing Footage shows none).",
+    "Compare Dashed line and Dashed circle against the Figma Reference."
   ],
   "package": {
-    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.9/frame-bridge-0.2.9.zip",
-    "sha256": "e1308cf56bdb184701ba0e6e54aa1706831079070f6c34617b3e9a3cc7fd04e0",
-    "size": 105994
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.10/frame-bridge-0.2.10.zip",
+    "sha256": "89ad4481eada9a17ba24f3a9753784f8d087f54200f03db62a3141f6ebd36adb",
+    "size": 106702
   },
-  "signature": "KK9ClfKT3Ei5dyp0PD+anMiU7YuLYoGTMqsOqGnDuHshKTlrAJYUWEF+s2i1jLljrRPxBkahXyVlImghDBOKCw=="
+  "signature": "BhnmyK6ShpgM0rGXpJdDtKLFjm6K7AwLNdcK5kL3TtNdeIjXppOFtjWd5jsXUOpFQ/+A3ltoeL7Hpbmg+tDECg=="
 }
