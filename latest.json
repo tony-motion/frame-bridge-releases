@@ -1,20 +1,19 @@
 {
-  "version": "0.2.10",
-  "build": "20261113.1451-00e0f29",
+  "version": "0.2.11",
+  "build": "20261113.1653-fe13e46",
   "shellVersion": "1.0.0",
   "notes": [
-    "Fixed (important): if the After Effects panel closed partway through a send and you resumed soon after, comps built before the close could lose their images (colour bars, missing files). Resuming now never touches images that existing comps use.",
-    "The After Effects panel now says when an import was cut short, and that you finish it with Resume in Figma.",
-    "Dashed lines now start and end on a half dash like Figma (the dash Offset in AE was going the wrong way)."
+    "Dashed lines and circles now start on a half dash like Figma. After Effects ignores a dash Offset set by a script, which is why 0.2.9 and 0.2.10 looked the same, so the dash list itself now starts halfway through a dash: Dash 1 and Dash 2 are each half a dash, with a 0 gap after Dash 2.",
+    "Dashed circles and ellipses arrive as a path that starts on the right-hand side, where Figma starts its dashes, rather than as an AE Ellipse.",
+    "Test frames: two new cells, Dashed circle, 13 and Dashed square. Re-create the test frames to get them."
   ],
   "testFocus": [
-    "Close the Frame Bridge panel in After Effects partway through a send, reopen it, check it says the import didn't finish, then click Resume in Figma. Every comp should keep all its images (File ▸ Dependencies ▸ Find Missing Footage shows none).",
-    "Compare Dashed line and Dashed circle against the Figma Reference."
+    "Re-create the test frames, send them, and compare Dashed line, Dashed circle, Dashed circle, 13 and Dashed square against the Figma Reference."
   ],
   "package": {
-    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.10/frame-bridge-0.2.10.zip",
-    "sha256": "89ad4481eada9a17ba24f3a9753784f8d087f54200f03db62a3141f6ebd36adb",
-    "size": 106702
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.11/frame-bridge-0.2.11.zip",
+    "sha256": "19328110263bdc39b727127648a0b7b932d2b1db610b987e716978f6a68434ff",
+    "size": 107149
   },
-  "signature": "BhnmyK6ShpgM0rGXpJdDtKLFjm6K7AwLNdcK5kL3TtNdeIjXppOFtjWd5jsXUOpFQ/+A3ltoeL7Hpbmg+tDECg=="
+  "signature": "2qVNPR90iDIU7xZSinjqxqXycq7Tbq9tm0A/othVXiMWpRiGTGwklBk/KGkt23teogOvCXxCkGurgk5zC5fdCA=="
 }
