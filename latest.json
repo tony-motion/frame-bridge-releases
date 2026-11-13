@@ -1,21 +1,20 @@
 {
-  "version": "0.2.1",
-  "build": "20261112.1544-f9695bc",
+  "version": "0.2.2",
+  "build": "20261113.1000-aa65994",
   "shellVersion": "1.0.0",
   "notes": [
-    "Frames with a gradient or image background no longer flatten into one image. The background arrives as a picture of just the background, and everything on top stays editable.",
-    "The same goes for frames inside frames, and for frame strokes with a gradient or a different width on each side.",
-    "A frame still flattens if its background is a video or an image with adjustments (exposure, contrast and so on). The report says so."
+    "Image fills now arrive as the whole original image, larger than the frame or rectangle, so you can move and rescale it in After Effects.",
+    "If the shape fills the whole frame, the image just runs past the comp edges. If it's smaller, a mask called Figma shape trims it like Figma does; slide the image inside with the Pan Behind tool (Y).",
+    "New: Preferences (the gear) ▸ Create test frames adds a page with three test frames full of shapes, strokes, rotations and flips."
   ],
   "testFocus": [
-    "Send the Meta social frames again: the background should be one image layer called Background, with shapes, text and images on top as separate layers.",
-    "Turn on the Figma Reference layer and check the background matches: gradient direction and colours, and image fills cropped and positioned like Figma.",
-    "If you have them, try angular and diamond gradients, and an image fill set to Fit, Crop or Tile, or rotated."
+    "Send your Meta social frames again: the photo should be one full-size image layer that extends past the comp, lined up with the Figma Reference.",
+    "In a new Figma file, click Create test frames, send all three frames and work through the Accuracy checklist."
   ],
   "package": {
-    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.1/frame-bridge-0.2.1.zip",
-    "sha256": "3af45e8ab18447686a42fa2f7e6ff68368700dcf86b22fc3a86c46175c531ac9",
-    "size": 91163
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.2/frame-bridge-0.2.2.zip",
+    "sha256": "f689aa60ac43a47ccb88c996e2aa9978f50e8a2ea03bd1fa37a1e5a14e0100de",
+    "size": 96168
   },
-  "signature": "ByzAONL+/EwIpUWtfyNrj+cDzwIVd6RwjuAzBnHoW9VE3oywi8L7QZyX24MT8z0SQTcOtXcWmsJnjRUkGKW+Dw=="
+  "signature": "vHJL9+ttqwjTYkCLCGGAsJ1F5hjq3hwM0GI6nHmrp8K0+1+aQB2toAp2ZUFjU90SF9e/FtB3nZkq11xiK7nuDQ=="
 }
