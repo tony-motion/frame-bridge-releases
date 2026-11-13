@@ -1,19 +1,18 @@
 {
-  "version": "0.2.6",
-  "build": "20261113.1308-514c733",
+  "version": "0.2.7",
+  "build": "20261113.1326-c7a6779",
   "shellVersion": "1.0.0",
   "notes": [
-    "Fixed: a frame's gradient stroke set to Inside (or Outside) came over twice as thick and spilled past the frame. It's now trimmed exactly like Figma.",
-    "Lines: Frame Bridge now checks where Figma actually draws each line (some lines are drawn to one side, with the caps kept inside the length) and places the AE line to match."
+    "Lines: a line set to Inside is now placed the way Figma draws it, entirely on one side of the line with round or square caps kept within its length. This covers the test frames' lines, caps and dashed line."
   ],
   "testFocus": [
-    "Send the test frames again. Compare Round caps, Square caps, Dashed line and the three angled lines against the Figma Reference.",
-    "In the structure frame, check Frame, gradient stroke now matches Figma."
+    "Send the test frames again and compare Line 0°, 30° and −60°, Round caps, Square caps and Dashed line against the Figma Reference.",
+    "Resume: start sending all five frames, close the Frame Bridge panel in After Effects partway through, reopen it (Window ▸ Extensions ▸ Frame Bridge), then click Resume in Figma. Only the frames that weren't built yet should arrive."
   ],
   "package": {
-    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.6/frame-bridge-0.2.6.zip",
-    "sha256": "91fe46890b5a6e19dc6aa4a65d4e13af94e0f509eef0cbf029fa6a6b4708cb6f",
-    "size": 104408
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.7/frame-bridge-0.2.7.zip",
+    "sha256": "30b06a5e591afe00f4f8493d7f3515673c3e02723fd3f6a1d002852706ec207b",
+    "size": 104054
   },
-  "signature": "lXrRG4t6xCq61k141lW9b87Qm6eBtDZ7/wCBQT7AwnXOVJnS8sc55Fs1CFahjdJbanxQwg8FtQgvGznoYLv3BA=="
+  "signature": "GNPH+G0BRivb2O/eFpS7/iNxW5ZElfP/gWk93nxYKx5+TjkBkt3Vw681ZEQF8ZDmZiSAzPWH+jRubkGN7fTzCA=="
 }
