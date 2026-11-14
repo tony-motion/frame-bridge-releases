@@ -1,19 +1,22 @@
 {
-  "version": "0.2.11",
-  "build": "20261113.1653-fe13e46",
+  "version": "0.3.0",
+  "build": "20261113.2127-208e3bc",
   "shellVersion": "1.0.0",
   "notes": [
-    "Dashed lines and circles now start on a half dash like Figma. After Effects ignores a dash Offset set by a script, which is why 0.2.9 and 0.2.10 looked the same, so the dash list itself now starts halfway through a dash: Dash 1 and Dash 2 are each half a dash, with a 0 gap after Dash 2.",
-    "Dashed circles and ellipses arrive as a path that starts on the right-hand side, where Figma starts its dashes, rather than as an AE Ellipse.",
-    "Test frames: two new cells, Dashed circle, 13 and Dashed square. Re-create the test frames to get them."
+    "Milestone 3: text arrives as live, editable After Effects text: fonts, sizes, colours and tracking (several in one layer), alignment, text-box width, line breaks, line height and paragraph spacing, upper case and small caps, superscript and subscript.",
+    "Line breaks and baselines come from Figma's own layout. If After Effects would break a line differently, Frame Bridge widens the box slightly or adds Figma's line breaks, and the report says so.",
+    "Fonts are checked with After Effects before every send. If one is missing, choose Cancel export, Recheck fonts, or Use Figma shapes (Figma's letter shapes with a switched-off live-text copy underneath). Frame Bridge never swaps in a different font.",
+    "Underlined, struck-through and list text arrives as Figma shapes with a live copy underneath. Text with a stroke, gradient or ellipsis stays an image.",
+    "Create test frames adds a Test text frame. Re-create the test frames to get it. Testing steps: docs/TESTING-M3.md."
   ],
   "testFocus": [
-    "Re-create the test frames, send them, and compare Dashed line, Dashed circle, Dashed circle, 13 and Dashed square against the Figma Reference."
+    "Re-create the test frames and send them all. Try each button on the font card, then compare the Test text frame against the Figma Reference.",
+    "Send a real client frame with plenty of text and send the report and diagnostics file."
   ],
   "package": {
-    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.2.11/frame-bridge-0.2.11.zip",
-    "sha256": "19328110263bdc39b727127648a0b7b932d2b1db610b987e716978f6a68434ff",
-    "size": 107149
+    "url": "https://github.com/tony-motion/frame-bridge-releases/releases/download/v0.3.0/frame-bridge-0.3.0.zip",
+    "sha256": "abcb4531b33a1bc773a76566476999efd72a2a9938cf91828cbf9557db145034",
+    "size": 123422
   },
-  "signature": "2qVNPR90iDIU7xZSinjqxqXycq7Tbq9tm0A/othVXiMWpRiGTGwklBk/KGkt23teogOvCXxCkGurgk5zC5fdCA=="
+  "signature": "bThJ1sqwoIgxBv26/u2CSIv8ez9SqRhGoo/bmlJ3VXtdhRsdK9ZT9Pc8A5MgGr1zkGEMIm5PioeL3k0wNTZcCw=="
 }
